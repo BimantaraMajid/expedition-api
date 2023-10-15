@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "npx nodemon app.js",
-    "eslint": "npx eslint ./"
+    "eslint": "npx eslint ./",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "seed": "npx sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",

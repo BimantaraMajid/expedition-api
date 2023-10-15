@@ -4,17 +4,17 @@ Expedition API adalah sebuah sistem API yang dirancang untuk mengelola data eksp
 
 ## Fitur Utama
 - Manajemen Pengiriman: Anda dapat dengan mudah menambahkan, mengedit, dan menghapus pengiriman barang dalam sistem.
-- Pelacakan Pengiriman: Sistem ini memungkinkan Anda untuk melacak status pengiriman barang secara real-time.
-- Manajemen Penerima: Anda dapat mengelola data penerima dengan mudah, termasuk alamat, kontak, dan informasi lainnya.
-- Manajemen Pengemudi: Mengelola pengemudi dan kendaraan yang terlibat dalam pengiriman barang.
-Laporan dan Analitik: Sistem menyediakan laporan dan analitik yang dapat membantu Anda dalam pengambilan keputusan yang lebih baik.
+- Pelacakan Pengiriman: Sistem ini memungkinkan Anda untuk melacak status pengiriman barang secara real-time. (soon)
+- Manajemen Penerima: Anda dapat mengelola data penerima dengan mudah, termasuk alamat, kontak, dan informasi lainnya. (soon)
+- Manajemen Pengemudi: Mengelola pengemudi dan kendaraan yang terlibat dalam pengiriman barang. (soon)
+- Laporan dan Analitik: Sistem menyediakan laporan dan analitik yang dapat membantu Anda dalam pengambilan keputusan yang lebih baik. (soon)
 
 ## Teknologi yang Digunakan
 - Node.js: Proyek ini menggunakan Node.js sebagai bahasa pemrograman utama.
--Express.js: Framework Express digunakan untuk membuat API yang efisien dan terstruktur.
-PostgreSQL: Saat ini masih menggunakan Postgre sebagai database utama, namun nantinya akan migrasi ke Database NoSQL MongoDB.
-Postman: Untuk testint API sekaligus sebagai dokumentasi sementara, nantinya dokumentasi akan menggunakan swagger.
-Swagger: (Soon)
+- Express.js: Framework Express digunakan untuk membuat API yang efisien dan terstruktur.
+- PostgreSQL: Saat ini masih menggunakan Postgre sebagai database utama, namun nantinya akan migrasi ke Database NoSQL MongoDB.
+- Postman: Untuk testint API sekaligus sebagai dokumentasi sementara, nantinya dokumentasi akan menggunakan swagger.
+- Swagger: (Soon)
 
 ## Instalasi
 
@@ -22,7 +22,7 @@ Pastikan Anda telah menginstal Node.js dan npm di komputer Anda sebelum menjalan
 
 1. Clone repositori ini ke komputer Anda:
    ```bash
-   git clone [URL repositori];
+   git clone [URL repositori]
    cd expedition-api
 2. Instal semua dependensi dengan menjalankan perintah berikut:
    ```shell

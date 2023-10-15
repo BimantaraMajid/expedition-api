@@ -7,8 +7,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(morgan('combined'));
+app.use(express.json());
 app.use('/api', indexRouter);
-app.use('/*', (req, res) => httpNotFound(res));
+app.use('/*', (req, res) => httpNotFound(res, { error_message: 'router not found' }));
 
 // Start the server
 app.listen(port, () => {

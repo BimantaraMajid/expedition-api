@@ -7,7 +7,14 @@ module.exports = {
   dialect: 'postgres',
   define: {
     createdAt: 'created_at',
-    updatedAt: 'modified_at',
+    updatedAt: 'updated_at',
     timestamps: false,
   },
+  pool: {
+    max: 10,
+    min: 0,
+    acquire: 30000,
+    idle: 10000,
+  },
+  logging: true,
 };

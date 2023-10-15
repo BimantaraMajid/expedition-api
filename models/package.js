@@ -3,7 +3,7 @@ const {
 } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
-  class Package extends Model {
+  class Packages extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,7 +13,12 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Package.init({
+  Packages.init({
+    created_at: DataTypes.DATE,
+    updated_at: {
+      type: DataTypes.DATE,
+      defaultValue: new Date(),
+    },
     transaction_id: DataTypes.STRING,
     customer_name: DataTypes.STRING,
     customer_code: DataTypes.STRING,
@@ -29,17 +34,17 @@ module.exports = (sequelize, DataTypes) => {
     transaction_payment_type_name: DataTypes.STRING,
     transaction_cash_amount: DataTypes.DOUBLE,
     transaction_cash_change: DataTypes.DOUBLE,
-    customer_attribute: DataTypes.JSON,
-    connote: DataTypes.JSON,
+    customer_attribute: DataTypes.JSONB,
+    connote: DataTypes.JSONB,
     connote_id: DataTypes.STRING,
-    origin_data: DataTypes.JSON,
-    destination_data: DataTypes.JSON,
-    koli_data: DataTypes.ARRAY,
-    custom_field: DataTypes.JSON,
-    currentLocation: DataTypes.JSON,
+    origin_data: DataTypes.JSONB,
+    destination_data: DataTypes.JSONB,
+    koli_data: DataTypes.JSONB,
+    custom_field: DataTypes.JSONB,
+    currentLocation: DataTypes.JSONB,
   }, {
     sequelize,
-    modelName: 'package',
+    modelName: 'packages',
   });
-  return Package;
+  return Packages;
 };
